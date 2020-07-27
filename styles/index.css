@@ -11,10 +11,19 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'EB Garamond', serif;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
+h1{
+    font-size: 5rem;
+    color: var(--white);
+    margin-top: 1rem;
+}
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 #main-bg {
     background-image: url("../images/joe-abah-bg.png");
     background-size: cover;
@@ -43,9 +52,62 @@ body {
     padding: 10px;
     margin-top: 30px;
 }
-.menu-item{
+.menu-item, .social {
     padding: 5px;
     font-size: 2rem;
     list-style-type: none;
     margin-right: 21px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#name-section{
+    text-align: center;
+    margin: 0 10rem;
+}
+
+#logo {
+    width: 14rem;
+}
+
+.welcome {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+
+
+
+/* Utilities */
+
+.t-upper{
+    text-transform: uppercase;
+}
+.white {
+    color: var(--white);
+}
+
+.btn {
+    border: 3px solid var(--gold);
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 1.6rem 4rem;
+    background-color: unset;
+    font-size: 1.7rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.06);
+    transition: all 1s;
+    background-color: rgba(0,0,0,0.6);
+}
+.btn:focus{
+    outline: none;
 }
