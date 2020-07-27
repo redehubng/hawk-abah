@@ -1,0 +1,51 @@
+:root{
+    --gold: #D8C16B;
+    --white: #ffffff;
+    --black: #4F4F4F;
+}
+html{
+    
+    font-size: 10px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+}
+
+
+#main-bg {
+    background-image: url("../images/joe-abah-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 87.5vh;
+    padding: 3rem;
+    background-position: center center;
+}
+
+#menu-icon img{
+    float: right;
+    cursor: pointer;
+    
+}
+#menu-icon::after, .menu-list::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu-list{
+    position: absolute;
+    right: 20px;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.menu-item{
+    padding: 5px;
+    font-size: 2rem;
+    list-style-type: none;
+    margin-right: 21px;
+}
