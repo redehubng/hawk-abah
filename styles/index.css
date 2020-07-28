@@ -18,6 +18,7 @@ h1{
     font-size: 5rem;
     color: var(--white);
     margin-top: 1rem;
+    font-weight: 400;
 }
 
 a {
@@ -28,15 +29,16 @@ a {
     background-image: url("../images/joe-abah-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 87.5vh;
+    height: 100vh;
     padding: 3rem;
     background-position: center center;
 }
 
-#menu-icon img{
-    float: right;
+#menu-icon-img{
+    display: block;
+    margin: 0 auto;
     cursor: pointer;
-    
+    transition: all 0.7s;
 }
 #menu-icon::after, .menu-list::after{
     content: "";
@@ -45,13 +47,16 @@ a {
 }
 
 .menu-list{
+    transition: all 1s;
     position: absolute;
+    display: none;
     right: 20px;
     background: var(--white);
     border-radius: 10px;
     padding: 10px;
     margin-top: 30px;
 }
+
 .menu-item, .social {
     padding: 5px;
     font-size: 2rem;
@@ -67,7 +72,6 @@ main {
 
 #name-section{
     text-align: center;
-    margin: 0 10rem;
 }
 
 #logo {
@@ -81,6 +85,10 @@ main {
 }
 
 
+#social-container {
+    margin: auto 0 auto auto;
+}
+
 
 
 /* Utilities */
@@ -91,18 +99,26 @@ main {
 .white {
     color: var(--white);
 }
-
+.gold {
+    color: var(--gold);
+}
+.center {
+    text-align: center;
+}
 .btn {
     border: 3px solid var(--gold);
     box-sizing: border-box;
     border-radius: 30px;
-    padding: 1.6rem 4rem;
+    padding: 1.4rem 3.3rem;
     background-color: unset;
     font-size: 1.7rem;
     color: var(--white);
     cursor: pointer;
 }
 
+.btn-style {
+    margin: 4rem;
+}
 .btn:hover{
     transform: scale(1.06);
     transition: all 1s;
@@ -110,4 +126,64 @@ main {
 }
 .btn:focus{
     outline: none;
+}
+.d-sm-flex{
+    display: flex;
+}
+.container {
+    
+    margin: 0 auto;
+}
+
+/* About page styles */
+
+#about-section{
+    background-image: url("../images/joe-abah-bg-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 3rem;
+    background-position: center center;
+}
+
+.about-text {
+    line-height: 1.5;
+    font-size: 1.7rem;
+}
+
+.menu-list-about{
+    position: absolute;
+    left: 30%;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top:-20rem;
+    display: none;
+    
+}
+
+
+#menu-icon-about {
+    text-align: center;
+}
+
+/*  media queries */
+
+@media all and (min-width: 1000px){
+    .menu-list-about{
+        left: 45%
+    }
+    .container {
+        width: 105rem;
+    }
+
+    #menu-icon-img{
+        float: right;
+    }
+    #name-section{
+        margin: 0 10rem;
+    }
+    .d-sm-flex{
+        display: block;
+    }
 }
