@@ -29,7 +29,7 @@ a {
     background-image: url("../images/joe-abah-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     padding: 3rem;
     background-position: center center;
 }
@@ -50,7 +50,7 @@ a {
     transition: all 1s;
     position: absolute;
     display: none;
-    right: 20px;
+    right: 30%;
     background: var(--white);
     border-radius: 10px;
     padding: 10px;
@@ -173,6 +173,9 @@ main {
     .menu-list-about{
         left: 45%
     }
+    .menu-list{
+        right: 20px;
+    }
     .container {
         width: 105rem;
     }
@@ -185,5 +188,8 @@ main {
     }
     .d-sm-flex{
         display: block;
+    }
+    #main-bg{
+        height: calc(100vh - 60px);
     }
 }
